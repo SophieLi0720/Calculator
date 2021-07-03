@@ -65,14 +65,6 @@ class Calculator:
                     # Merge last 2 columns and show equal sign it it.
                     self.frame_per_button.grid(columnspan=2)
 
-    @staticmethod
-    def check_float(potential_float):
-        try:
-            float(potential_float)
-            return True
-        except ValueError:
-            return False
-
     def append_num(self, char):
         """this method will get the values from the buttons and show on the equation label,
            once "=" is pressed it will call the function to process the equation."""
